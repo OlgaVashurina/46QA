@@ -1,4 +1,4 @@
-package javaHW;
+package java_HW.lesson_01;
 
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
