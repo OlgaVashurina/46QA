@@ -55,7 +55,7 @@ public class FirstHW {
         driver.findElement(By.id("gender-male")).click(); // Выбор пола
         driver.findElement(By.id("FirstName")).sendKeys("Alexander"); // Имя
         driver.findElement(By.id("LastName")).sendKeys("Smith"); // Фамилия
-        driver.findElement(By.id("Email")).sendKeys("alsdfgsfgh@example.com"); // Email
+        driver.findElement(By.id("Email")).sendKeys("alavgewgh@example.com"); // Email
         driver.findElement(By.id("Password")).sendKeys("Parw01l@2024"); // Пароль
         driver.findElement(By.id("ConfirmPassword")).sendKeys("Parw01l@2024"); // Подтверждение пароля
         driver.findElement(By.id("register-button")).click(); // Клик на кнопку регистрации
