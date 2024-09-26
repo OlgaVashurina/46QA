@@ -1,4 +1,4 @@
-package javaHW;
+package lesson_02;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -6,14 +6,20 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class First {
+import java.time.Duration;
+
+public class Lesson02 {
+
     WebDriver driver;
 
     @BeforeMethod
     public void setUp() {
         driver = new ChromeDriver();
-        driver.get("https://demowebshop.tricentis.com/");
-        //driver.manage().window().setPosition(new Point(2500, 0)); - отображение на 2 мониторе
+        driver.navigate().to("https://www.google.com");
+        driver.navigate().back();
+        driver.navigate().forward();
+        driver.navigate().refresh();
+        driver.manage().timeouts().implicitlyWait(Duration.ofDays(10));
         driver.manage().window().maximize(); // развернуть браузер на весь экран
     }
 
@@ -25,5 +31,6 @@ public class First {
     @AfterMethod(enabled = true) //если поменять на false то браузер не закроется
     public void tearDown() {
         driver.quit();
+
     }
 }

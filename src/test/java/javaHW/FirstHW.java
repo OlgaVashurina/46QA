@@ -1,3 +1,5 @@
+package javaHW;
+
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.time.Duration;
 
-public class First {
+public class FirstHW {
     WebDriver driver;
 
     @BeforeMethod
